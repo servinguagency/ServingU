@@ -8,9 +8,9 @@ jQuery(document).ready(function ($) {
 
 	"use strict";
 
-	setTimeout(function(){
-        $('.sticky-footer').fadeIn(200);
-    }, 2000);
+	setTimeout(function() {
+		$('#subscribeModal').modal();
+	}, 2000);
 
 	// loader
 	$(".loader").delay(1000).fadeOut("slow");
@@ -377,13 +377,6 @@ jQuery(document).ready(function ($) {
 	});
 
 	$("#logo-subscribe").on("click", function(){
-		$("#logo-subscribe").fadeOut(200);
-		$(".sticky-footer").fadeIn(200);
-	});
-
-
-	$("#logo-subscribe-close").on("click", function(){
-		$("#logo-subscribe").fadeIn(200);
-		$(".sticky-footer").fadeOut(200);
+		$('#subscribeModal').modal();
 	});
 });
