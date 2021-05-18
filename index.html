@@ -4,7 +4,7 @@
 <head>
   <title>ServingU</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="fonts/icomoon/style.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -425,7 +425,7 @@
 
     <div class="site-section" id="contact-section">
       <div class="container">
-        <form action="https://formspree.io/f/xdoyajla" method="POST" class="contact-form">
+        <form action="https://formspree.io/f/xdoyajla" method="POST" enctype="multipart/form-data" class="contact-form">
           <div class="section-title text-center mb-5">
             <span class="sub-title mb-2 d-block">Send your resume in now - get a job in a week</span>
             <h2 class="title text-primary">Priority Applications</h2>
@@ -457,7 +457,7 @@
             </div>
             <div class="col-12 col-md-6">
               <div class="custom-file mb-3">
-                <input type="file" class="custom-file-input" id="customFile" name="resume">
+                <input type="file" class="custom-file-input" accept="image/png, image/jpeg" id="customFile" name="resume">
                 <label class="custom-file-label" for="customFile">Choose file</label>
               </div>
             </div>
