@@ -115,13 +115,75 @@ textarea {
 #logo-subscribe{
   position: fixed;
   bottom: 25px;
-  right: 25px;
+  left: 25px;
   height: 40px;
   width: 40px;
   -webkit-transition: .5s;
   transition: .5s;
   z-index: 3;
   cursor: pointer;
+}
+
+@-webkit-keyframes bounce {
+    0%,  
+    100% {
+       -webkit-transform: translateY(0);
+    } 
+    50% {
+        -webkit-transform: translateY(-5px);
+    }
+}
+@-moz-keyframes bounce {
+    0%, 
+    100% {
+       -moz-transform: translateY(0);
+    }
+    50% {
+       -moz-transform: translateY(-5px);
+    }
+}
+@-o-keyframes bounce {
+    0%,
+    100% {
+       -o-transform: translateY(0);
+    }
+    50% {
+       -o-transform: translateY(-5px);
+    }
+}
+@keyframes bounce {
+    0%,  
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+#scroll-submit{
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  padding: 0px 15px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  z-index: 3;
+  cursor: pointer;
+  background-color: rgba(51, 51, 51, .1);
+  border-radius: 3px;
+  font-size: 30px;
+  color: #35B9DF;
+  cursor: hover;
+  display: inline-block;
+}
+
+#scroll-submit a:hover{
+  color: #35B9DF;
+  animation: bounce 1s infinite;
+  -webkit-animation: bounce 1s infinite;
+  -moz-animation: bounce 1s infinite;
+  -o-animation: bounce 1s infinite; 
 }
 
 .pulse{
