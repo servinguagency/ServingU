@@ -457,7 +457,8 @@
             </div>
             <div class="col-12 col-md-6">
               <div class="custom-file mb-3">
-                <input type="file" class="custom-file-input" accept="image/png, image/jpeg" id="customFile" name="resume">
+                <input type="file" class="custom-file-input" accept="image/png, image/jpeg" id="customFile"
+                  name="resume">
                 <label class="custom-file-label" for="customFile">Choose file</label>
               </div>
             </div>
@@ -485,23 +486,35 @@
     <div class="modal fade" id="subscribeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
       aria-hidden="true">
       <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title" style="color: #35B9DF" id="myModalLabel">Subscribe To Our Job Board</h4>
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"
-                style="color: #35B9DF">&times;</span><span class="sr-only">Close</span></button>
-          </div>
-          <form 
-            method="post"
-            action="https://formspree.io/f/xayaelkb"
-            class="form-subscribe">
-            <div class="modal-body">
+        <div class="modal-content subscribe-modal-content">
+          <form method="post" action="https://formspree.io/f/xayaelkb" class="form-subscribe">
+            <div class="modal-body" style="position: relative;">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true"
+                style="color: #35B9DF;">&times;</span><span class="sr-only">Close</span></button>
               <div class="row">
                 <div class="col-12">
-                  <p class="mb-4">By subscribing to our newsletter, you give us the chance to send you a weekly update
+                  <div>
+                    <div>
+                      <img style="height: 80px;" src="images/Logo.png">
+                    </div>
+                    <div style="font-size: 2.5rem;display: inline;border-bottom: 1px solid #35B9DF;font-weight: 600;">Subscribe!</div>
+                  </div>
+                  <p style="margin-bottom: -40px; font-size: .875rem;">By subscribing to our newsletter, you give us the chance to send you a weekly update
                     with all job postings happening in your school’s area! Whether you’re interested now, or later, you
-                    will be getting an influx of quality jobs looking to hire ASAP. Please consider subscribing to help
+                    will be getting an influx of quality <span style="color: #35B9DF">jobs looking to hire ASAP</span>. Please consider subscribing to help
                     increase awareness to the job market of your local school.</p>
+                  <div class="mb-4">
+                    <svg viewBox="0 0 190 190" xmlns="http://www.w3.org/2000/svg">
+                      <defs>
+                        <clipPath id="user-space" clipPathUnits="userSpaceOnUse">
+                          <path fill="#FF0066"
+                          d="M42.8,-47.5C57.7,-38.4,73.7,-27.1,78.8,-11.9C83.9,3.4,78.1,22.6,66.5,34.2C54.8,45.7,37.1,49.6,19.9,56.7C2.7,63.9,-14,74.2,-30.7,73.1C-47.4,71.9,-64,59.2,-75,42.3C-85.9,25.4,-91.1,4.2,-88.2,-16.1C-85.3,-36.4,-74.2,-55.8,-58.2,-64.7C-42.1,-73.5,-21,-71.7,-3.6,-67.5C13.9,-63.2,27.8,-56.5,42.8,-47.5Z" transform="translate(100 100)"></path></clipPath>
+                      </defs>
+
+                      <image class="subscribe-modal-blob" preserveAspectRatio="xMinYMin slice"
+                        xlink:href="images/modal-pic.jpg" clip-path="url(#user-space)" />
+                    </svg>
+                  </div>
                 </div>
                 <div class="form-group col-12">
                   <input id="subscribe-form" name="school_subscribe" type="text" class="form-control form-control-mini"
@@ -512,8 +525,10 @@
                 </div>
               </div>
             </div>
-            <div class="modal-footer">
-              <button class="btn btn-primary px-5" type="submit">Subscribe</button>
+            <div class="row mb-4">
+              <div class="col-12">
+                <button class="btn btn-primary px-5" type="submit">Subscribe</button>
+              </div>
             </div>
           </form>
         </div>

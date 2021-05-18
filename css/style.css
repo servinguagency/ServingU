@@ -157,9 +157,20 @@ textarea {
 }
 
 
+.subscribe-modal-content{
+  color: #ffffff;
+  background-color: #333333;
+  text-align: center;
+}
 
-
-
+.subscribe-modal-blob{
+  height: 190px;
+  width: 190px;
+}
+.close{
+  opacity: 1;
+  text-shadow: none;
+}
 
 a {
   -webkit-transition: .3s all ease;
